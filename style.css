@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #14bfee;
+    color: white;
+}
+
+/* Image Gallery */
+#gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
+    opacity: 0.8;
+}
+
+/* Accordion Styles */
+.accordion-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.panel {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Form Styles */
+form input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form p {
+    color: red;
+}
+
+/* Hover Effect */
+#changeButton:hover {
+    background-color: #FF5722;
+}
+/* Fade-in animation for gallery images */
+.gallery-image {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

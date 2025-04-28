@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLearning System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the eLearning System</h1>
+    </header>
+
+    <!-- Interactive Button Section -->
+    <section>
+        <h2>Interactive Button</h2>
+        <button id="changeButton">Click to Change Text</button>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery-section">
+        <h2>Image Gallery</h2>
+        <div id="gallery">
+            <img src="your soul.jpg" alt="Your SOUL is A River" class="gallery-image">
+            <img src="take the risk.jpg" alt="Take the Risk" class="gallery-image">
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <section>
+        <h2>eLearning Content</h2>
+        <div class="accordion">
+            <button class="accordion-button">Module 1: Introduction to JavaScript</button>
+            <div class="panel">
+                <p>This module covers the basics of JavaScript programming.</p>
+            </div>
+            <button class="accordion-button">Module 2: DOM Manipulation</button>
+            <div class="panel">
+                <p>This module teaches you how to interact with HTML using JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Form -->
+    <section id="login">
+        <h2>Login / Register</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+            <p id="loginFeedback"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
