@@ -1,7 +1,12 @@
 // Interactive Button that changes text and color
 document.getElementById("changeButton").addEventListener("click", function() {
-    this.textContent = "Text Changed!";
-    this.style.backgroundColor = "red";
+    this.textContent = "You Clicked Me!";
+    this.style.backgroundColor = "green";
+    this.style.color = "white";
+    this.style.transform = "scale(1.2)";
+    setTimeout(() => {
+        this.style.transform = "scale(1)";
+    }, 300);
 });
 
 // Image Gallery: Display the image clicked in alert
@@ -26,7 +31,7 @@ acc.forEach(function(button) {
     });
 });
 
-// Form Validation for Login
+// Form Validation for Login with animation feedback
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -36,9 +41,11 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     if (!email.match(emailPattern)) {
         feedback.textContent = "Please enter a valid email address.";
+        feedback.style.color = "red";
         event.preventDefault();
     } else if (password.length < 8) {
         feedback.textContent = "Password must be at least 8 characters long.";
+        feedback.style.color = "red";
         event.preventDefault();
     } else {
         feedback.textContent = "Login successful!";
